@@ -1,9 +1,10 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import Navbar from "@/components/navigations/Navbar";
+import ButtonPurple from "@/components/buttons/Buttons";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -14,110 +15,65 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
+
+      <section className="space-y-[3em]">
+        <Image src="/hero.svg" width={400} height={400} />
+        <div className="space-y-[1em]">
+          <h1 className="text-pt-dark text-4xl font-bold">
+            Don't Just pay rent <br />
+            <span className="text-pt-light">Earn Dividend</span>
+            <span className="text-base text-p-purple"> $</span>
+          </h1>
           <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.js</code>
+            Kewaa Provides a fractional investment platform for investors in
+            real-estate on the blockchain.
           </p>
+          <ButtonPurple styleprops="w-[50%]">Go to Marketplace</ButtonPurple>
+        </div>
+      </section>
+      <section>
+        <div>
+          <h2>How does it work?</h2>
+          <p>
+            Kewaa enables fractional investment of rental real estate properties
+            by utilizing the blockchain. Using an implementation of re-fungible
+            token standard. every property is tokenized and represented as an
+            NFT which is extended into a specific amount of ERC 20 tokens. the
+            ERC20 tokens are an extension of each NFT and represent fractional
+            ownership. each investor earn dividend from the rent paid per
+            property. You can now imagine the possibilities.
+          </p>
+        </div>
+        <Image src="/hero2.svg" width={400} height={400} />
+      </section>
+      <section>
+        <h2>Problems we solve</h2>
+        <div>
           <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
+            <div>
+              <p>Inclusivity</p>
+              <div>Icon</div>
+            </div>
+            <article>
+              We believe the blockchain can transform real-estate in Africa.
+              Currently real estate is relatively illiquid as one can't readily
+              convert it to cash or other assets. Kewaa can solve this!
+            </article>
           </div>
         </div>
+      </section>
 
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
+
+      <section>
+        <h2>Latest Collection</h2>
+        <div>
+
+
+          <div className="bg-w">
+
           </div>
         </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+      </section>
     </>
-  )
+  );
 }

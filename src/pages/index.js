@@ -9,6 +9,7 @@ import { IoIosInfinite } from "react-icons/io";
 import HouseCard from "@/components/landingpage/HouseCard";
 import Solutions from "@/components/landingpage/Solutions";
 import FAQ from "@/components/landingpage/FAQ";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -74,10 +75,11 @@ export default function Home() {
           <h2 className="text-white text-2xl font-bold">Latest Collection</h2>
           <div className="space-y-[4em] md:space-y-0 lg:bg-[#F4F6FE] md:flex justify-between items-start">
             <HouseCard />
+            <HouseCard />
           </div>
           <div className="text-center">
             <ButtonBlack styleprops="w-[45%] md:w-[30%] lg:w-[20%]">
-              Go to Marketplace
+              <Link href="/marketplace"> Go to Marketplace</Link>
             </ButtonBlack>
           </div>
         </section>

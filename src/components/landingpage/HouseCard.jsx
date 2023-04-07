@@ -3,7 +3,7 @@ import ButtonPurple, { ButtonWhite } from "../buttons/Buttons";
 
 export default function HouseCard() {
   return (
-    <div className="bg-white pb-[1em] md:w-[45%] lg:w-[48%] md:text-sm lg:flex items-start lg:space-x-4 ">
+    <div className="bg-white pb-[1em] md:w-[45%] lg:w-[49%] md:text-sm lg:flex items-start lg:space-x-4 ">
       <div className="space-y-[2em] lg:w-[55%] ">
         <img
           src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"

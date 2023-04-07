@@ -13,7 +13,7 @@ export default function ButtonPurple({ children, styleprops, ...rest }) {
 export function ButtonWhite({ children, styleprops, ...rest }) {
   return (
     <button
-      className={`bg-white text-p-purple font-semibold py-3 px-4 border border-p-purple ${styleprops} rounded-sm shadow-sm `}
+      className={`bg-white text-p-purple font-semibold py-3 px-4 border border-p-purple ${styleprops} rounded-sm shadow-md`}
       {...rest}
     >
       {children}

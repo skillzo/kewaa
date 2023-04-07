@@ -6,7 +6,7 @@ export default function slug() {
     "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
   );
   return (
-    <section className="space-y-[3em] md:space-y-0 lg:flex lg:space-x-[2em] items-start ">
+    <section className="space-y-[3em] lg:space-y-[5em] lg:flex lg:space-x-[2em] items-start ">
       {/* <div></div> */}
       {/* <div>back</div> */}
       <div className="space-y-[2em] lg:w-[60%]">
@@ -15,7 +15,7 @@ export default function slug() {
           alt="slughouse"
           className=" object-cover w-full h-[250px] md:h-[500px] "
         />
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4 md:space-x-6">
           <img
             src="https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aG91c2UlMjBpbnRlcmlvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
             alt=""
@@ -36,7 +36,8 @@ export default function slug() {
             River Oakland Apartment
           </h2>
           <p className="text-pt-dark">
-            Amount per flat: <span> 1ETH (1,600)</span>
+            Amount per flat:{" "}
+            <span className="text-[#4F47E5]"> 1ETH (1,600)</span>
           </p>
         </div>
         <p className="text-pt-dark">

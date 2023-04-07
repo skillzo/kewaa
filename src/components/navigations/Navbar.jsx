@@ -3,10 +3,12 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
 import Link from "next/link";
 import { ButtonBlack } from "../buttons/Buttons";
+import { useUser } from "@/store/context";
+import Modal from "../landingpage/Modal";
 
 export default function Navbar() {
   const [showNav, setShowNav] = useState(false);
-
+  const { setShowModal, showModal } = useUser();
   const navlinkArr = [
     {
       id: 1,
@@ -43,7 +45,10 @@ export default function Navbar() {
                 />
               );
             })}
-            <ButtonBlack styleprops="w-[45%] md:w-[30%] lg:w-[20%]">
+            <ButtonBlack
+              onClick={() => setShowModal(true)}
+              styleprops="w-[45%] md:w-[30%] lg:w-[20%]"
+            >
               Connect Wallet
             </ButtonBlack>
           </div>
@@ -60,11 +65,15 @@ export default function Navbar() {
               />
             );
           })}
-          <ButtonBlack styleprops="w-[45%] md:w-[40%]">
+          <ButtonBlack
+            styleprops="w-[45%] md:w-[40%]"
+            onClick={() => setShowModal(true)}
+          >
             Connect Wallet
           </ButtonBlack>
         </div>
       </nav>
+      {showModal && <Modal />}
     </>
   );
 }

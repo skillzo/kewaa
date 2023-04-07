@@ -10,6 +10,7 @@ import HouseCard from "@/components/landingpage/HouseCard";
 import Solutions from "@/components/landingpage/Solutions";
 import FAQ from "@/components/landingpage/FAQ";
 import Link from "next/link";
+import Modal from "@/components/landingpage/Modal";
 
 const inter = Inter({ subsets: ["latin"] });
 

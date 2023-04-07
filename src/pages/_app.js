@@ -10,8 +10,8 @@ export default function App({ Component, pageProps }) {
       <Navbar />
       <HomeLayout>
         <Component {...pageProps} />
+        <Footer />
       </HomeLayout>
-      <Footer />
     </IconContext.Provider>
   );
 }

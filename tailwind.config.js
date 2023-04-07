@@ -14,6 +14,8 @@ module.exports = {
         "p-purple": "#9747FF",
         "pt-dark": "#B8B9B9",
         "pt-light": "#ffffff",
+        "ptb-dark": "#1E1E1E",
+        "ptb-light": "#979797",
       },
     },
   },

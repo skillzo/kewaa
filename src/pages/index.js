@@ -26,6 +26,8 @@ export default function Home() {
 
       <section className="space-y-[3em] md:space-y-0 md:flex flex-row-reverse  justify-between items-center">
         <Image
+          width={400}
+          height={400}
           src="/hero.svg"
           alt="hero image"
           className="w-full md:w-[40%] h-[400px] lg:w-[50%]  object-contain"
@@ -61,6 +63,8 @@ export default function Home() {
             </p>
           </div>
           <Image
+            width={400}
+            height={400}
             alt="hero image"
             src="/hero2.svg"
             className="w-full md:w-[40%]"

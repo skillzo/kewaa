@@ -14,6 +14,8 @@ export default function Slug() {
       <div className="space-y-[2em] lg:w-[60%]">
         <Image
           src={image}
+          width={400}
+          height={400}
           alt="slughouse"
           className=" object-cover w-full h-[250px] md:h-[500px] "
         />
@@ -21,10 +23,14 @@ export default function Slug() {
           <Image
             src="https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aG91c2UlMjBpbnRlcmlvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
             alt=""
+            width={400}
+            height={400}
             className="w-[150px] h-[75px] md:w-[200px] md:h-[100px] object-cover"
             onClick={(e) => setImage(e.target.src)}
           />
           <Image
+            width={400}
+            height={400}
             src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGhvdXNlJTIwaW50ZXJpb3J8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
             alt=""
             className="w-[150px] h-[75px] md:w-[200px] md:h-[100px] object-cover"

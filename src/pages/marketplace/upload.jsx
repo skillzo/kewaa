@@ -1,8 +1,9 @@
 import ButtonPurple from "@/components/buttons/Buttons";
 import Label, { Select } from "@/components/tinyComp/Inputs";
+import Image from "next/image";
 import React, { useRef } from "react";
 
-export default function upload() {
+export default function Upload() {
   const inputRef = useRef(null);
   return (
     <>
@@ -29,7 +30,11 @@ export default function upload() {
             </div>
 
             <input type="file" hidden ref={inputRef} />
-            <img src="/upload.svg" className="w-[40px] h-[40px]" />
+            <Image
+              alt="upload Icon"
+              src="/upload.svg"
+              className="w-[40px] h-[40px]"
+            />
           </div>
         </div>
 

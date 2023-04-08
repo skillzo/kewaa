@@ -25,14 +25,14 @@ export default function Home() {
       </Head>
 
       <section className="space-y-[3em] md:space-y-0 md:flex flex-row-reverse  justify-between items-center">
-        <img
+        <Image
           src="/hero.svg"
-          alt=""
-          className="md:w-[40%] h-[400px] lg:w-[50%]  object-contain"
+          alt="hero image"
+          className="w-full md:w-[40%] h-[400px] lg:w-[50%]  object-contain"
         />
         <div className="space-y-[1em] md:space-y-[1.5em] lg:space-y-[2em] md:w-[55%] lg:w-[60%]">
           <h1 className="text-pt-dark text-4xl md:text-5xl lg:text-7xl font-bold">
-            Don't Just pay rent <br />
+            Don&#x27;t Just pay rent <br />
             <span className="text-pt-light">Earn Dividend</span>
             <span className="text-base text-p-purple"> $</span>
           </h1>
@@ -60,7 +60,11 @@ export default function Home() {
               the rent paid per property. You can now imagine the possibilities.
             </p>
           </div>
-          <img src="/hero2.svg" className="md:w-[40%]" />
+          <Image
+            alt="hero image"
+            src="/hero2.svg"
+            className="w-full md:w-[40%]"
+          />
         </section>
 
         <section className="space-y-[3em]">

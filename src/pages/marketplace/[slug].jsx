@@ -1,8 +1,9 @@
 import ButtonPurple, { ButtonPrimary } from "@/components/buttons/Buttons";
 import RangeBar from "@/components/landingpage/RangeBar";
+import Image from "next/image";
 import React, { useState } from "react";
 
-export default function slug() {
+export default function Slug() {
   const [image, setImage] = useState(
     "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
   );
@@ -11,19 +12,19 @@ export default function slug() {
       {/* <div></div> */}
       {/* <div>back</div> */}
       <div className="space-y-[2em] lg:w-[60%]">
-        <img
+        <Image
           src={image}
           alt="slughouse"
           className=" object-cover w-full h-[250px] md:h-[500px] "
         />
         <div className="flex items-center space-x-4 md:space-x-6">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aG91c2UlMjBpbnRlcmlvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
             alt=""
             className="w-[150px] h-[75px] md:w-[200px] md:h-[100px] object-cover"
             onClick={(e) => setImage(e.target.src)}
           />
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGhvdXNlJTIwaW50ZXJpb3J8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
             alt=""
             className="w-[150px] h-[75px] md:w-[200px] md:h-[100px] object-cover"

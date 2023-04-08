@@ -56,7 +56,8 @@ export default function Navbar() {
           </div>
         )}
 
-        <div className="hidden w-[35%] lg:flex justify-between items-center">
+        {/* pc navbar */}
+        <div className="hidden w-[30%] lg:flex justify-between items-center">
           {navlinkArr.map((nav) => {
             return (
               <NavlinkComponent
@@ -68,7 +69,7 @@ export default function Navbar() {
             );
           })}
           <ButtonBlack
-            styleprops="w-[45%] md:w-[30%] lg:w-[25%] text-xs"
+            styleprops="lg:w-[35%] text-xs"
             onClick={() => setShowModal(true)}
           >
             Connect Wallet

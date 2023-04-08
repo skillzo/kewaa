@@ -29,7 +29,7 @@ export default function upload({ styleprops }) {
           </div>
 
           <input type="file" hidden ref={inputRef} />
-          <Image src="/upload.svg" width={40} height={40} />
+          <img src="/upload.svg" className="w-[40px] h-[40px]" />
         </div>
       </div>
 

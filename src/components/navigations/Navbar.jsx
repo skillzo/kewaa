@@ -29,7 +29,9 @@ export default function Navbar() {
   return (
     <>
       <nav className="relative flex justify-between items-center p-6  md:px-8 lg:w-[90%] mx-auto ">
-        <p className="text-p-purple font-semibold">KEWAA ESTATE</p>
+        <p className="text-p-purple font-semibold">
+          <Link href="/">KEWAA ESTATE</Link>
+        </p>
         <div className="lg:hidden" onClick={() => setShowNav(!showNav)}>
           {showNav ? <IoMdClose /> : <RxHamburgerMenu />}
         </div>
@@ -66,7 +68,7 @@ export default function Navbar() {
             );
           })}
           <ButtonBlack
-            styleprops="w-[45%] md:w-[40%]"
+            styleprops="w-[45%] md:w-[30%] lg:w-[25%] text-xs"
             onClick={() => setShowModal(true)}
           >
             Connect Wallet

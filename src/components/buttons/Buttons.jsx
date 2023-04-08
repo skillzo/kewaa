@@ -30,3 +30,13 @@ export function ButtonBlack({ children, styleprops, ...rest }) {
     </button>
   );
 }
+export function ButtonPrimary({ children, styleprops, ...rest }) {
+  return (
+    <button
+      className={` font-semibold py-3 px-4 ${styleprops} rounded-sm`}
+      {...rest}
+    >
+      {children}
+    </button>
+  );
+}

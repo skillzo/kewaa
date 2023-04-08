@@ -1,4 +1,5 @@
-import ButtonPurple from "@/components/buttons/Buttons";
+import ButtonPurple, { ButtonPrimary } from "@/components/buttons/Buttons";
+import RangeBar from "@/components/landingpage/RangeBar";
 import React, { useState } from "react";
 
 export default function slug() {
@@ -6,7 +7,7 @@ export default function slug() {
     "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
   );
   return (
-    <section className="space-y-[3em] lg:space-y-[5em] lg:flex lg:space-x-[2em] items-start ">
+    <section className="space-y-[3em] lg:space-y-0 lg:flex lg:space-x-[2em] items-start ">
       {/* <div></div> */}
       {/* <div>back</div> */}
       <div className="space-y-[2em] lg:w-[60%]">
@@ -66,9 +67,10 @@ export default function slug() {
           <p>Available Unit: One(1)</p>
         </div>
 
-        <ButtonPurple styleprops="bg-[#4F47E5] border border-white w-[45%] md:w-[30%] lg:w-full">
+        <RangeBar color1="#1E1E1E" color2="#B8B9B9" />
+        <ButtonPrimary styleprops="bg-[#4F47E5] border border-white w-[45%] md:w-[30%] lg:w-full">
           Buy Property
-        </ButtonPurple>
+        </ButtonPrimary>
       </div>
     </section>
   );

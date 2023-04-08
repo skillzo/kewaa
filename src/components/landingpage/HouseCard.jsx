@@ -1,5 +1,7 @@
+import Link from "next/link";
 import React from "react";
 import ButtonPurple, { ButtonWhite } from "../buttons/Buttons";
+import RangeBar from "./RangeBar";
 
 export default function HouseCard() {
   return (
@@ -41,18 +43,11 @@ export default function HouseCard() {
         </p>
         <div className="flex justify-between items-center">
           <ButtonPurple styleprops="w-[45%]">Buy Now</ButtonPurple>
-          <ButtonWhite styleprops="w-[45%]">Read More</ButtonWhite>
+          <ButtonWhite styleprops="w-[45%]">
+            <Link href="marketplace/slug">Read More</Link>
+          </ButtonWhite>
         </div>
-        <div>
-          <div className="w-full  bg-[#B8B9B9] rounded-full h-3.5 dark:bg-gray-700">
-            <div className="bg-[#1E1E1E] h-3.5 rounded-l-lg w-[70%]"></div>
-          </div>
-
-          <div className="text-xs font-semibold flex justify-between px-1 mt-1">
-            <p>70% Sold</p>
-            <p>30% Remaining</p>
-          </div>
-        </div>
+        <RangeBar color1="#B8B9B9" color2="#1E1E1E" />
       </div>
     </div>
   );

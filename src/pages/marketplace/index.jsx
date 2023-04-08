@@ -18,7 +18,7 @@ export default function marketplace() {
           <MdOutlineExpandMore />
         </div>
       </div>
-      <div className="space-y-[4em] md:space-y-0 md:flex justify-between flex-wrap items-start">
+      <div className="space-y-[4em] md:space-y-0 md:flex justify-between flex-wrap items-start md:gap-y-10 lg:gap-4">
         <HouseCard />
         <HouseCard />
         <HouseCard />

@@ -31,6 +31,8 @@ export default function Upload() {
 
             <input type="file" hidden ref={inputRef} />
             <Image
+              width={400}
+              height={400}
               alt="upload Icon"
               src="/upload.svg"
               className="w-[40px] h-[40px]"

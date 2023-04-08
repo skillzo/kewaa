@@ -1,11 +1,11 @@
 import React from "react";
 
-export default function Label({ styleprops, title, ...rest }) {
+export default function Label({ styleprops, type, title, ...rest }) {
   return (
     <div className={`flex flex-col space-y-2 ${styleprops} `}>
       <label htmlFor="Title">{title}</label>
       <input
-        type="text"
+        type={type || "text"}
         className="bg-[#270c4b] rounded-sm p-3 outline-none border border-slate-700"
         {...rest}
       />

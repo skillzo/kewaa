@@ -2,11 +2,11 @@ import React from "react";
 
 export default function Label({ styleprops, type, title, ...rest }) {
   return (
-    <div className={`flex flex-col space-y-2 ${styleprops} `}>
+    <div className={`flex flex-col space-y-2 `}>
       <label htmlFor="Title">{title}</label>
       <input
         type={type || "text"}
-        className="bg-[#270c4b] rounded-sm p-3 outline-none border border-slate-700"
+        className={`bg-[#270c4b] rounded-sm p-3 outline-none border border-slate-700 ${styleprops}`}
         {...rest}
       />
     </div>

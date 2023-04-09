@@ -34,7 +34,7 @@ export default function Home() {
         />
         <div className="space-y-[1em] md:space-y-[1.5em] lg:space-y-[2em] md:w-[55%] lg:w-[60%]">
           <h1 className="text-pt-dark text-4xl md:text-5xl lg:text-7xl font-bold">
-            Don&#x27;t Just pay rent <br />
+            Don{"&#x27;"};t Just pay rent <br />
             <span className="text-pt-light">Earn Dividend</span>
             <span className="text-base text-p-purple"> $</span>
           </h1>

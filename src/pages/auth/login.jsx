@@ -36,7 +36,7 @@ export default function Login() {
             </div>
           </ButtonPrimary>
           <p>
-            Don&#x27;t have an account?{" "}
+            Don{"&#x27;"}t have an account?
             <span className="text-p-purple font-bold">Sign up here</span>
           </p>
         </form>

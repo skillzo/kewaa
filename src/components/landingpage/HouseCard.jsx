@@ -46,8 +46,8 @@ export default function HouseCard() {
         </p>
         <div className="flex justify-between items-center">
           <ButtonPurple styleprops="w-[45%]">Buy Now</ButtonPurple>
-          <Link href="marketplace/slug" className="w-[45%]">
-            <ButtonWhite>Read More</ButtonWhite>
+          <Link href="marketplace/slug" className="w-[45%] border">
+            <ButtonWhite styleprops="w-full">Read More</ButtonWhite>
           </Link>
         </div>
         <RangeBar color1="#B8B9B9" color2="#1E1E1E" />
